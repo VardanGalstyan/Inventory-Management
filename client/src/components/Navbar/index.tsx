@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from "@/redux";
 import { setIsDarkMode } from "@/state";
 import SidebarButton from "@/ui/buttons/sidebar-button";
 import { Bell, Moon, Settings, Sun } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -49,9 +50,17 @@ const Navbar = () => {
             </span>
           </div>
           <hr className="w-0 h-7 border-solid border-l border-gray-300 mx-3" />
-          <div className="flex item-center gap-3 cursor-pointer">
-            <div className="w-9 h-9">image</div>
-            <span className="font-semibold">Ed Roh</span>
+          <div className="flex items-center gap-3 cursor-pointer">
+            <div className="w-9 h-9">
+              <Image
+                src="https://inventory-management-gallas.s3.eu-central-1.amazonaws.com/vg-profile.jpeg"
+                width={50}
+                height={50}
+                className="rounded-full h-full object-cover"
+                alt="profile"
+              />
+            </div>
+            <span className="font-semibold">VG</span>
           </div>
         </div>
         <Link href="/settings">

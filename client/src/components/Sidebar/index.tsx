@@ -12,6 +12,7 @@ import {
   SlidersHorizontal,
   User,
 } from "lucide-react";
+import Image from "next/image";
 
 const Sidebar = () => {
   const { isSidebarCollapsed } = useAppSelector((state) => state.global);
@@ -30,7 +31,15 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         )}
       >
-        <div>logo</div>
+        <div>
+          <Image
+            src="https://inventory-management-gallas.s3.eu-central-1.amazonaws.com/logo.png"
+            width={50}
+            height={50}
+            className="rounded-full h-full object-cover"
+            alt="logo"
+          />
+        </div>
         <h1
           className={clsx(
             "font-extrabold text-2xl",
