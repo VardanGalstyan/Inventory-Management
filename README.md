@@ -19,6 +19,13 @@ This project is a **full-stack application** designed to provide an intuitive pl
 
 ---
 
+## Live Demo
+
+You can view the live version of this project here:  
+[**Live Demo**](https://master.d1sdjjnzho172v.amplifyapp.com/)
+
+---
+
 ## Features
 
 ### Client (Frontend)
